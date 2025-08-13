@@ -7,7 +7,7 @@ A non-static method, on the other hand, is associated with an instance of the cl
 E.g 
 
 
-public class MyClass {
+public class MyClass {
     static void staticMethod() {
         System.out.println("This is a static method.");
     }
