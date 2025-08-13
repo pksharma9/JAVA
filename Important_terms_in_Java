@@ -1,0 +1,27 @@
+In Java, methods can be declared as either static or non-static (instance).
+
+A static method belongs to the class itself, rather than to any specific instance of the class. It can be invoked without creating an object of the class. Static methods are loaded into memory at class loading time and are typically used for utility or helper functions that do not require access to instance-level data.
+
+A non-static method, on the other hand, is associated with an instance of the class. It requires the creation of an object to be called, as it can access instance variables and other non-static methods within the same class.
+
+E.g 
+
+
+public class MyClass {
+    static void staticMethod() {
+        System.out.println("This is a static method.");
+    }
+
+    void nonStaticMethod() {
+        System.out.println("This is a non-static (instance) method.");
+    }
+
+    public static void main(String[] args) {
+        // Calling static method directly using class name
+        MyClass.staticMethod();
+
+        // Creating an object to call non-static method
+        MyClass obj = new MyClass();
+        obj.nonStaticMethod();
+    }
+}
